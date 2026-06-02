@@ -1,4 +1,4 @@
-Con los resultados obtenidos, el "ruido" de los datos experimentales afectó más a los métodos de orden superior: Simpson 1/3 y 3/8 dieron errores de 0.2735% y 0.2014% respectivamente, 
+Con los resultados obtenidos, el ruido de los datos experimentales afectó más a los métodos de orden superior: Simpson 1/3 y 3/8 dieron errores de 0.2735% y 0.2014% respectivamente, 
 mayores al 0.1104% del Trapecio, porque al usar polinomios de grado 2 y 3 tienden a ajustar las oscilaciones del ruido en vez de la tendencia real de P(V), mientras que el trapecio 
 al usar rectas grado 1 promedia y suaviza mejor esas variaciones, resultando mejor para datos no suaves a pesar de su menor orden teórico.
 
