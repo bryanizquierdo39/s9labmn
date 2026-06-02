@@ -1,1 +1,8 @@
-.
+Con los resultados obtenidos, el "ruido" de los datos experimentales afectó más a los métodos de orden superior: Simpson 1/3 y 3/8 dieron errores de 0.2735% y 0.2014% respectivamente, 
+mayores al 0.1104% del Trapecio, porque al usar polinomios de grado 2 y 3 tienden a ajustar las oscilaciones del ruido en vez de la tendencia real de P(V), mientras que el trapecio 
+al usar rectas grado 1 promedia y suaviza mejor esas variaciones, resultando mejor para datos no suaves a pesar de su menor orden teórico.
+
+La estrategia de usar interpolación con spline cúbico para aplicar Gauss-Legendre m=3 tuvo como ventaja principal la eficiencia, ya que solo requirió evaluar 3 nodos óptimos en vez de los 13 puntos de Newton-Cotes, 
+y logró una alta precisión aparente al tomar su resultado 417.8510 kPa·L como referencia con 0.0000% de error relativo; sin embargo, presenta la desventaja de que su exactitud depende completamente de la calidad del spline cúbico,
+pues si este sobreajusta el ruido experimental o suaviza en exceso la curva P(V) real, el error se refleja en el resultado, y además no es posible calcular su error absoluto real ya que el valor exacto 
+de la integral se desconoce al tratarse de datos experimentales.
